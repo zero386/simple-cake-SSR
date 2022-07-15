@@ -1,0 +1,41 @@
+
+@import "../../styles/globals.scss";
+
+.about-container {
+  border-radius: 5px;
+  font-family: $font-family;
+  padding: 5%;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.column {
+  float: left;
+  width: 50%;
+  font-family: var($font-family);
+  text-align: center;
+  &.about-info {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: $medium-screen) {
+ .row-info {
+   flex-direction: column;
+   .column {
+     width: 100%;
+   }
+ }
+}
+
+

@@ -1,0 +1,49 @@
+@import "../../styles/globals.scss";
+
+.navbar {
+  top: 0;
+  z-index: 1;
+  position: sticky;
+  width: 100%;
+  max-width: 100%;
+  min-height: 4vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: $lighter-gray;
+  transition: all 0.4s ease;
+}
+
+@media only screen and (max-width: $medium-screen) {
+  .navbar {
+    justify-content: space-between;
+    cursor: pointer;
+  }
+}
+
+.sc-logo img {
+  width: 80px;
+}
+
+.navigation {
+  ul {
+    box-sizing: border-box;
+    list-style-type: none;
+    display: flex;
+    min-height: 6vh;
+    justify-content: flex-end;
+    align-items: center;
+
+    li {
+      text-align: center;
+      padding: 0.5em;
+      cursor: pointer;
+    }
+
+    li a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

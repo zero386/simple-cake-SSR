@@ -1,0 +1,25 @@
+@import "../../styles/globals.scss";
+
+.row-info {
+    padding: 5%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    font-family: var($font-family);
+    text-align: center;
+    &.about-info {
+      text-align: center;
+    }
+  }
+
+
+@media screen and (max-width: $medium-screen) {
+    .row-info {
+      flex-direction: column;
+      .column {
+        width: 100%;
+      }
+    }
+   }

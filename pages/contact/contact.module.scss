@@ -1,0 +1,52 @@
+@import "../../styles/globals.scss";
+
+.contact-container {
+  border-radius: 5px;
+  font-family: $font-family;
+  padding: 5%;
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  .delivery-methods {
+    text-align: center;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 5%;
+  text-align: center;
+  font-family: $font-family;
+  &.wp-number {
+    text-align: center;
+    padding-top: 10%;
+  }
+  &.email {
+    text-align: center;
+    padding-top: 15%;
+  }
+}
+
+.wp-logo {
+  border-radius: 5%;
+}
+
+@media screen and (max-width: $medium-screen) {
+  .row-info {
+    flex-direction: column;
+    .column {
+      width: 100%;
+    }
+  }
+ }

@@ -1,0 +1,84 @@
+/* html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+} */
+
+
+/* SCSS Variables */
+$font-family: "Patrick Hand", cursive;
+$black-color: "black";
+$font-weigth-bolder: bolder;
+
+/*Screen Sizes*/
+$small-screen: 400px;
+$medium-screen: 750px;
+$large-screen: 1000px;
+$xlarge-screen: 1400px;
+
+/* Font Sizes */
+$font-size-small: 20px;
+$font-size-medium: 24px;
+$font-size-large: 28px;
+$font-size-xlarge: 32px;
+
+/* Box Shadow */
+$box-shadow: 0 0 10px #595959;
+$box-shadow-transition: box-shadow .5s;
+
+/*Colors*/
+$light-gray: #efefef;
+$lighter-gray: #eeeeee;
+$stronger-gray: #D4D7D8;
+$black: #595959;
+$red-cake: #fc6e6e; 
+
+/* Media Queries */
+@media screen and (min-width: $small-screen) {
+  .sc-text {
+    font-size: $font-size-small;
+  }
+  .spinner {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media screen and (min-width: $medium-screen) {
+  .sc-text {
+    font-size: $font-size-medium;
+  }
+  .spinner {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: $large-screen) {
+  .sc-text {
+    font-size: $font-size-large;
+  }
+  .spinner {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: $xlarge-screen) {
+  .sc-text {
+    font-size: $font-size-xlarge;
+  }
+  .spinner {
+    width: 300px;
+    height: 300px;
+  }
+}
+

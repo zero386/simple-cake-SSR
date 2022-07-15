@@ -1,0 +1,24 @@
+@import '../../styles/globals.scss';
+
+.footer {
+    background-color: $lighter-gray;
+    font-family: $font-family;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 1%;
+    }
+    .list-inline-item {
+        padding-right: 3%;
+    }
+    .copyright {
+        text-align: center;
+        .copyright-text {
+            padding-bottom: 2%;
+        }
+    }
+    .social-network {
+        list-style-type: none;
+        display: flex;
+    }
+}

@@ -1,0 +1,53 @@
+@import "../../styles/globals.scss";
+
+.dropbtn {
+  background-color: $lighter-gray;
+  color: $black;
+  padding: 14px;
+  font-weight: $font-weigth-bolder;
+  border: none;
+  font-family: $font-family;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $lighter-gray;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px $black;
+  z-index: 1;
+  border-radius: 1rem;
+}
+
+.dropdown-content a {
+  color: $lighter-gray;
+  padding: 5% 5%;
+  text-decoration: none;
+  display: block;
+  font-family: $font-family;
+}
+
+.dropdown-content .active {
+  background-color: $red-cake;
+  border-radius: 1rem;
+}
+
+.dropdown-content a:hover {
+  background-color: $stronger-gray;
+  border-radius: 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: $stronger-gray;
+  border-radius: 1rem;
+}

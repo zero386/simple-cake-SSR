@@ -1,0 +1,23 @@
+@import "../../styles/globals.scss";
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+.spinner {
+  border-radius: 50%;
+  border: 6px solid $red-cake;
+  animation: spinner 1s linear infinite;
+  margin: 5%;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
