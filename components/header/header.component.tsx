@@ -6,10 +6,9 @@ import Image from 'next/image';
 import styles from  "./header.module.scss";
 
 const SCheaderComponent = () => {
-  const widthWindow = typeof window !== 'undefined' ? 'red' : 'blue'
-  // const [mobileNavWidth, setMobileNavWidth] = useState(globalThis?.window?.innerWidth);
-  const [mobileNavWidth, setMobileNavWidth] = useState(500);
+  const [mobileNavWidth, setMobileNavWidth] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
+
 
   const handleClose = () => setIsOpen(false);
   const toggleShow = () => setIsOpen((s) => !s);
@@ -72,9 +71,10 @@ const SCheaderComponent = () => {
 
   useEffect(() => {
     // Fetch NavItems from API
+    setMobileNavWidth(window.innerWidth);
     window.addEventListener("resize", updateSizeWindow);
     return () => window.removeEventListener("resize", updateSizeWindow);
-  });
+  }, []);
 
   return (
     <header className={styles.navbar}>
