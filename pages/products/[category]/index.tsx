@@ -5,8 +5,10 @@ import SCcardComponent from "../../../components/card/card.component";
 import SCmodalComponent from "../../../components/modal/modal.component";
 import SCcarouselImagesComponent from "../../../components/carousel-images/carousel-images.component";
 import SCloadingSpinner from "../../../components/loading-spinner/loading-spinner.component";
+import SCwpButtonComponent from "../../../components/wp-button/wp-button";
 import { useRouter } from "next/router";
 import { motion, useAnimation } from "framer-motion";
+
 import styles from "./products.module.scss";
 
 interface IProduct {
@@ -263,6 +265,8 @@ const ProductsPage = () => {
               </div>
             );
           })}
+
+        <SCwpButtonComponent />
       </div>
       <SCmodalComponent
         showModal={showModal}

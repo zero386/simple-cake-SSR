@@ -4,6 +4,8 @@ import Image from "next/image";
 import SCfooterComponent from "../../components/footer/footer.component";
 import SCheaderComponent from "../../components/header/header.component";
 import SCrowComponent from "../../components/row/row.component";
+import { FloatingWhatsApp } from 'react-floating-whatsapp-button'
+import 'react-floating-whatsapp-button/dist/index.css'
 import { useEffect } from "react";
 
 const ContactPage = () => {
@@ -68,6 +70,7 @@ const ContactPage = () => {
         {pageStructure.rows.map((row, indexRow) => {
           return <SCrowComponent key={indexRow} columns={row.columns} />;
         })}
+        <FloatingWhatsApp popupMessage="Hola! Deseas realizar un pedido?"/>
       </div>
 
       <SCfooterComponent />

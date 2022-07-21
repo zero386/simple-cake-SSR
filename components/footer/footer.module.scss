@@ -13,6 +13,8 @@
     }
     .copyright {
         text-align: center;
+        display: flex;
+        flex-direction: column;
         .copyright-text {
             padding-bottom: 2%;
         }
@@ -20,5 +22,15 @@
     .social-network {
         list-style-type: none;
         display: flex;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .follow-us {
+
     }
 }

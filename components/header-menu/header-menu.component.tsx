@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./header-menu.module.scss";
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 import { IHeaderNavItem } from "../header/interfaces/index";
 
 type SCheaderMenuProps = {

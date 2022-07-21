@@ -8,7 +8,12 @@ const SCfooterComponent = () => {
     <div className={`${styles["footer"]}`}>
       <footer>
         <div className={`${styles["container"]}`}>
-          <div>
+          <div className={`${styles["contact"]}`}>
+            <p className={`${styles["sc-text"]}`}>Contacto</p>
+            <label className={`${styles["sc-text"]}`}>Cel: 3324953033</label>
+            <label className={`${styles["sc-text"]}`}>Zapopan, Jalisco</label>
+          </div>
+          <div className={`${styles["follow-us"]}`}>
             <ul
               className={`${styles["social-network"]} list-inline text-center`}
             >
@@ -52,14 +57,8 @@ const SCfooterComponent = () => {
             </ul>
           </div>
           <div className={`${styles["copyright"]}`}>
-            <div className={`${styles["copyright-text"]}`}>
-              <label className={`${styles["sc-text"]}`}>2022 Copyright</label>
-            </div>
-            <div className={`${styles["copyright-text"]}`}>
-              <label className={`${styles["sc-text"]}`}>
-                simplecake.com.mx Todos los derechos reservados
-              </label>
-            </div>
+            <label className={`${styles["sc-text"]}`}>2022 Copyright</label>
+            <label className={`${styles["sc-text"]}`}>www.simplecake.com.mx</label>
           </div>
         </div>
       </footer>

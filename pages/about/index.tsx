@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./about.module.scss";
 import SCfooterComponent from "../../components/footer/footer.component";
 import SCheaderComponent from "../../components/header/header.component";
 import SCrowComponent from "../../components/row/row.component";
-import { useEffect } from "react";
+import SCwpButtonComponent from "../../components/wp-button/wp-button";
 
 const AboutUsPage = () => {
+  const [showWPButton, setShowWPButton] = useState(false);
   const pageStructure = {
     name: "about",
     rows: [
@@ -61,6 +62,9 @@ const AboutUsPage = () => {
 
   useEffect(() => {
     // Call API to Fetch Page Layout
+    if (window !== undefined) {
+      setShowWPButton(true);
+    }
   }, []);
 
   return (
@@ -70,6 +74,7 @@ const AboutUsPage = () => {
         {pageStructure.rows.map((row, indexRow) => {
           return <SCrowComponent key={indexRow} columns={row.columns} />;
         })}
+        <SCwpButtonComponent />
       </div>
 
       <SCfooterComponent />
