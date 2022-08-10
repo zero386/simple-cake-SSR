@@ -31,109 +31,91 @@ const ProductsPage = () => {
   const productCookies: IProduct[] = [
     {
       id: "1",
-      name: "Galleta con avena y chispas de chocolate",
+      name: "Galleta de chocolate con cacahuate",
       images: [
-        "/assets/products/cookies/cookie-1.jpg",
-        "/assets/products/cookies/cookie-2.jpg",
+        "/assets/products/cookies/NY/chocolate-cacahuate/choco-cacahuate-1.jpg",
+        "/assets/products/cookies/NY/chocolate-cacahuate/choco-cacahuate-2.jpg",
       ],
       price: 500,
       quantity: 6,
     },
     {
       id: "2",
-      name: "Galleta royal icing con decorado",
+      name: "Galleta de nuez con chispas de chocolate",
       images: [
-        "/assets/products/cookies/cookie-3.jpg",
-        "/assets/products/cookies/cookie-4.jpg",
+        "/assets/products/cookies/NY/nuez-y-chispas-chocolate/nuez-y-chispas-1.jpg",
+        "/assets/products/cookies/NY/nuez-y-chispas-chocolate/nuez-y-chispas-2.jpg",
       ],
       price: 300,
       quantity: 6,
     },
     {
       id: "3",
-      name: "Galleta estilo NY con chocolateddd",
+      name: "Galleta decorada royal icing",
       images: [
-        "/assets/products/cookies/cookie-5.jpg",
-        "/assets/products/cookies/cookie-6.jpg",
+        "/assets/products/cookies/royal-icing/roy-ici-donut.jpg",
       ],
       price: 350,
       quantity: 3,
     },
     {
       id: "4",
-      name: "Galleta 4",
+      name: "Galleta decorada evento especial",
       images: [
-        "/assets/products/cookies/cookie-7.jpg",
-        "/assets/products/cookies/cookie-8.jpg",
+        "/assets/products/cookies/royal-icing/roy-ici-baptism.jpg",
       ],
-      price: 550,
-      quantity: 4,
+      price: 350,
+      quantity: 3,
     },
     {
       id: "5",
-      name: "Galleta 5",
+      name: "Galleta decorada royal icing",
       images: [
-        "/assets/products/cookies/cookie-9.jpg",
-        "/assets/products/cookies/cookie-1.jpg",
+        "/assets/products/cookies/royal-icing/roy-ici-music-notes.jpg",
       ],
-      price: 700,
-      quantity: 8,
+      price: 350,
+      quantity: 3,
     },
     {
       id: "6",
-      name: "Galleta 6",
+      name: "Galleta de mantequilla con mermelada al gusto",
       images: [
-        "/assets/products/cookies/cookie-1.jpg",
-        "/assets/products/cookies/cookie-5.jpg",
+        "/assets/products/cookies/butter/butter-cookie-1.jpg",
       ],
-      price: 570,
-      quantity: 4,
+      price: 700,
+      quantity: 8,
     },
   ];
 
   const productCakes: IProduct[] = [
     {
       id: "1",
-      name: "Cake 1",
-      images: ["/assets/products/cookies/cookie-1.jpg"],
+      name: "Pastel de cafe con chocolate y vainilla",
+      images: ["/assets/products/cakes/cake-1.jpg"],
       price: 300,
       quantity: 2,
     },
     {
       id: "2",
-      name: "Cake 2",
-      images: ["/assets/products/cookies/cookie-2.jpg"],
+      name: "Pastel de vainilla y frutos rojos",
+      images: ["/assets/products/cakes/cake-2.jpg"],
       price: 100,
       quantity: 1,
     },
     {
       id: "3",
-      name: "Cake 3",
-      images: ["/assets/products/cookies/cookie-3.jpg"],
+      name: "Pastel de mocha con nueza y vainilla",
+      images: ["/assets/products/cakes/cake-3.jpg"],
       price: 150,
       quantity: 3,
     },
     {
       id: "4",
-      name: "Cake 4",
-      images: ["/assets/products/cookies/cookie-4.jpg"],
+      name: "Pastel de chocolate ferrero y vainilla del himalaya",
+      images: ["/assets/products/cakes/cake-4.jpg"],
       price: 250,
       quantity: 1,
-    },
-    {
-      id: "5",
-      name: "Cake 5",
-      images: ["/assets/products/cookies/cookie-5.jpg"],
-      price: 400,
-      quantity: 1,
-    },
-    {
-      id: "6",
-      name: "Cake 6",
-      images: ["/assets/products/cookies/cookie-6.jpg"],
-      price: 170,
-      quantity: 1,
-    },
+    }
   ];
 
   const productBrownies = [
@@ -207,9 +189,9 @@ const ProductsPage = () => {
     console.log(category);
     setProducts(productCookies);
     // Fetch Products From API
-    if (category === "Galletas") {
+    if (category === "cookies") {
       setProducts(productCookies);
-    } else if (category === "Brownies") {
+    } else if (category === "brownies") {
       setProducts(productBrownies);
     } else {
       setProducts(productCakes);

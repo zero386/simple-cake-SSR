@@ -18,15 +18,11 @@ const Home: NextPage = () => {
   const collageImages: ICollageImage[] = [
     {
       category: "Pasteles",
-      images: ["/assets/products/cookies/NY/NY-4.jpg"],
+      images: ["/assets/products/cakes/cake-1.jpg"],
     },
     {
       category: "Galletas",
       images: ["/assets/products/cookies/NY/NY-2.jpg"],
-    },
-    {
-      category: "Brownies",
-      images: ["/assets/products/cakes/cake-1.jpg"],
     },
     {
       category: "Tartas",

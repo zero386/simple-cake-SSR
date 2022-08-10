@@ -98,7 +98,7 @@ const SCsidebarComponent = ({
                           }`}
                           onClick={() => handleClickItem(item, indexItem)}
                         >
-                          {item.title}hh
+                          {item.title}
                           <span
                             className={`${
                               activeItem === indexItem && toggleItem

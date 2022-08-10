@@ -12,7 +12,7 @@ const SCcarouselImagesComponent = ({
   ...props
 }: SCcarouselImagesProps) => {
   return (
-    <Carousel fade>
+    <Carousel fade className={`${styles['carousel-fade']}`}>
       {images.map((image, indexImage) => {
         return (
           <Carousel.Item key={indexImage} >

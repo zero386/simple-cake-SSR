@@ -1,3 +1,5 @@
+@import "../../styles/globals.scss";
+
 .collage-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -23,8 +25,6 @@
   bottom: 100%;
   left: 0;
   right: 0;
-  /*   opacity: 1.5;
-    background-image: url('/assets/logos/SClogo.png'); */
   background-size: cover;
   background-color: #eeeeee;
   overflow: hidden;
@@ -48,4 +48,22 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: $small-screen)  {
+  .collage-wrapper > div {
+    flex: 0 1 100%;
+  }
+}
+
+@media only screen and (min-width: $small-screen) and (max-width: $medium-screen)  {
+  .collage-wrapper > div {
+    flex: 0 1 50%;
+  }
+}
+
+@media only screen and (min-width: $medium-screen) and (max-width: $large-screen)  {
+  .collage-wrapper > div {
+    flex: 0 1 25%;
+  }
 }

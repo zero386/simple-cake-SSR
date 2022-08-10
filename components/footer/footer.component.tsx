@@ -37,23 +37,6 @@ const SCfooterComponent = () => {
                   </a>
                 </OverlayTrigger>
               </li>
-              <li className={`${styles["list-inline-item"]}`}>
-                <OverlayTrigger
-                  overlay={<Tooltip id="tooltip-disabled">Facebook</Tooltip>}
-                >
-                  <a
-                    className={`${styles["btn-floating"]} btn-tw mx-1`}
-                    href="https://www.google.com"
-                  >
-                    <Image
-                      src={"/assets/logos/fb-logo.png"}
-                      width={'60%'}
-                      height={'60%'}
-                      alt="facebook"
-                    />
-                  </a>
-                </OverlayTrigger>
-              </li>
             </ul>
           </div>
           <div className={`${styles["copyright"]}`}>
