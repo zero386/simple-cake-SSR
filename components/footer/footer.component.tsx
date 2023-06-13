@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./footer.module.scss";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { prefix } from "../../prefix";
 
 const SCfooterComponent = () => {
   return (
@@ -29,7 +30,7 @@ const SCfooterComponent = () => {
                     href="https://instagram.com/reposteriasc"
                   >
                     <img
-                      src={"/assets/logos/instagram-logo.png"}
+                      src={`${prefix}/assets/logos/instagram-logo.png`}
                       className={`${styles["instagram"]}`}
                       alt="instagram"
                     />
