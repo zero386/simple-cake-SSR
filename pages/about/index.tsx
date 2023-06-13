@@ -4,6 +4,7 @@ import SCfooterComponent from "../../components/footer/footer.component";
 import SCheaderComponent from "../../components/header/header.component";
 import SCrowComponent from "../../components/row/row.component";
 import SCwpButtonComponent from "../../components/wp-button/wp-button";
+import { prefix } from "../../prefix";
 
 const AboutUsPage = () => {
   const [showWPButton, setShowWPButton] = useState(false);
@@ -23,7 +24,7 @@ const AboutUsPage = () => {
           ofreciendo nuestra propia marca de postres.`,
           },
           {
-            image: "/assets/about/hornear-2.webp",
+            image: `${prefix}/assets/about/hornear-2.webp`,
             text: ``,
           },
         ],
@@ -32,7 +33,7 @@ const AboutUsPage = () => {
         name: "objective",
         columns: [
           {
-            image: "/assets/logos/SClogo.png",
+            image: `${prefix}/assets/logos/SClogo.png`,
             text: ``,
           },
           {
@@ -54,7 +55,7 @@ const AboutUsPage = () => {
             ofrecemos nuestros postres de una manera simple, deliciosa y sobre todo económica`,
           },
           {
-            image: "/assets/about/variety-products.jpg",
+            image: `${prefix}/assets/about/variety-products.jpg`,
             text: "",
           },
         ],

@@ -5,6 +5,7 @@ import SCsidebarComponent from "../sidebar/sidebar.component";
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import styles from  "./header.module.scss";
+import { prefix } from "../../prefix";
 
 const SCheaderComponent = () => {
   const router = useRouter();
@@ -81,7 +82,7 @@ const SCheaderComponent = () => {
             <img
               className="img-fluid"
               alt="x"
-              src={'/assets/icons/hamburguer-icon.png'}
+              src={`${prefix}/assets/icons/hamburguer-icon.png`}
               width={"50px"}
               height={'50px'}
               onClick={() => toggleMobileNav()}

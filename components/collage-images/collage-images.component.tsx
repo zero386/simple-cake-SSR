@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./collage-images.module.scss";
 import { ICollageImage } from './interfaces/index';
+import { prefix } from "../../prefix";
 
 type SCcollageImagesProps = {
     images: ICollageImage[];
@@ -18,7 +19,7 @@ const SCcollageImagesComponent = ({ images, ...props }: SCcollageImagesProps) =>
           <div key={indexImage} className={styles["container"]}>
             <img
               alt="lo"
-              src={image.images[0]}
+              src={`${prefix}${image.images[0]}`}
               width={"100%"}
               height={"100%"}
               className={styles["image"]}
