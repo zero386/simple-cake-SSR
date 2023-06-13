@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   const collageImages: ICollageImage[] = [
     {
       category: "Pasteles",
-      images: ["/assets/products/cakes/cake-1.jpg"],
+      images: ["/assets/products/cakes/cake-6.jpg"],
     },
     {
       category: "Galletas",
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
     },
     {
       category: "Tartas",
-      images: ["/assets/products/tarts/tart-1.jpg"],
+      images: ["/assets/products/tarts/tart-2.jpg"],
     },
     {
       category: "Roles",
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
     },
     {
       category: "Brownies",
-      images: ["/assets/products/brownies/brownie-1.jpg"],
+      images: ["/assets/products/brownies/brownie-2.jpg"],
     },
   ];
 

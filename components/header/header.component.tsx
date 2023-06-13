@@ -72,7 +72,7 @@ const SCheaderComponent = () => {
   return (
     <header className={styles.navbar}>
       <div className={`${styles['sc-logo']}`} onClick={()=> router.push('/')}>
-        <img src={'/assets/logos/SClogo.png'} alt="SCLogo" title="SCLogo" width={'100%'}
+        <img src={`${prefix}/assets/logos/SClogo.png`} alt="SCLogo" title="SCLogo" width={'100%'}
               height={'100%'} />
       </div>
 
