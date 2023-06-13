@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./carousel-images.module.scss";
 import Carousel from "react-bootstrap/Carousel";
 import Image from "next/image";
+import { prefix } from "../../prefix";
 
 type SCcarouselImagesProps = {
   images: string[];
@@ -19,7 +20,7 @@ const SCcarouselImagesComponent = ({
             {/* Bug with Nextjs Image inside carousel component from React Bootstrap*/}
             <img
               className={`${styles["image-carousel"]}`}
-              src={image}
+              src={`${prefix}${image}`}
               alt="First slide"
               width={"100%"}
               height={"100%"}
