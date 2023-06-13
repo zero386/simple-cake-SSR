@@ -11,8 +11,9 @@ import { ICollageImage } from "../components/collage-images/interfaces";
 
 const Home: NextPage = () => {
   const portraitImages = [
-    "/assets/banners/banner-1.png",
-    "/assets/banners/banner-2.png",
+    "/assets/banners/banner-galletas-chispas.jpg",
+    "/assets/banners/banner-roles.jpg",
+    "/assets/banners/banner-tartas.jpg",
   ];
 
   const collageImages: ICollageImage[] = [
@@ -22,15 +23,19 @@ const Home: NextPage = () => {
     },
     {
       category: "Galletas",
-      images: ["/assets/products/cookies/NY/NY-2.jpg"],
+      images: ["/assets/products/cookies/NY/nuez-y-chispas-chocolate/nuez-y-chispas-2.jpg"],
     },
     {
       category: "Tartas",
-      images: ["/assets/products/cakes/cake-2.jpg"],
+      images: ["/assets/products/tarts/tart-1.jpg"],
     },
     {
       category: "Roles",
       images: ["/assets/products/rolls/rolls-1.jpg"],
+    },
+    {
+      category: "Brownies",
+      images: ["/assets/products/brownies/brownie-1.jpg"],
     },
   ];
 

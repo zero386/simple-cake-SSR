@@ -24,7 +24,7 @@ const SCcollageImagesComponent = ({ images, ...props }: SCcollageImagesProps) =>
               className={styles["image"]}
             />
             <div className={styles["overlay"]}>
-              <div className={`${styles["text"]} sc-text`}>{image.category}</div>
+              <div className={`${styles["text"]} sc-text`}><label className={`${styles["sc-text"]}`}> {image.category}</label></div>
             </div>
           </div>
         );

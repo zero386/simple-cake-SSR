@@ -1,36 +1,70 @@
-@import '../../styles/globals.scss';
+@import "../../styles/globals.scss";
 
 .footer {
-    background-color: $lighter-gray;
-    font-family: $font-family;
-    .container {
-        display: flex;
-        justify-content: space-around;
-        padding-top: 1%;
+  background-color: $lighter-gray;
+  font-family: $font-family;
+  .container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1%;
+  }
+  .list-inline-item {
+    padding-right: 3%;
+  }
+  .copyright {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    .copyright-text {
+      padding-bottom: 2%;
     }
-    .list-inline-item {
-        padding-right: 3%;
+  }
+  .social-network {
+    list-style-type: none;
+    display: flex;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    p {
+      margin-bottom: 0;
     }
-    .copyright {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        .copyright-text {
-            padding-bottom: 2%;
-        }
-    }
-    .social-network {
-        list-style-type: none;
-        display: flex;
-    }
-    .contact {
-        display: flex;
-        flex-direction: column;
-        p {
-            margin-bottom: 0;
-        }
-    }
-    .follow-us {
+  }
+  .instagram {
+    width: 60px;
+    height: 60px;
+  }
+}
 
+@media screen and (min-width: $small-screen) {
+    .footer {
+        .instagram {
+            width: 30px;
+            height: 30px;
+          }
+    }
+}
+@media screen and (min-width: $medium-screen) {
+    .footer {
+        .instagram {
+            width: 50px;
+            height: 50px;
+          }
+    }
+}
+@media screen and (min-width: $large-screen) {
+    .footer {
+        .instagram {
+            width: 60px;
+            height: 60px;
+          }
+    }
+}
+@media screen and (min-width: $xlarge-screen) {
+    .footer {
+        .instagram {
+            width: 70px;
+            height: 70px;
+          }
     }
 }

@@ -14,33 +14,33 @@ const SCheaderComponent = () => {
   const navItems: IHeaderNav = {
     id: "1",
     items: [
-      {
-        id: "2",
-        title: "Productos",
-        url: "/products",
-        items: [
-          {
-            id: "22",
-            title: "Galletas",
-            url: "/cookies",
-          },
-          {
-            id: "23",
-            title: "Pasteles",
-            url: "/cakes",
-          },
-          {
-            id: "24",
-            title: "Brownies",
-            url: "/brownies",
-          },
-          {
-            id: "25",
-            title: "Roles",
-            url: "/roles",
-          },
-        ],
-      },
+      // {
+      //   id: "2",
+      //   title: "Productos",
+      //   url: "/products",
+      //   items: [
+      //     {
+      //       id: "22",
+      //       title: "Galletas",
+      //       url: "/cookies",
+      //     },
+      //     {
+      //       id: "23",
+      //       title: "Pasteles",
+      //       url: "/cakes",
+      //     },
+      //     {
+      //       id: "24",
+      //       title: "Brownies",
+      //       url: "/brownies",
+      //     },
+      //     {
+      //       id: "25",
+      //       title: "Roles",
+      //       url: "/roles",
+      //     },
+      //   ],
+      // },
       {
         id: "3",
         title: "Nosotros",
@@ -71,14 +71,14 @@ const SCheaderComponent = () => {
   return (
     <header className={styles.navbar}>
       <div className={`${styles['sc-logo']}`} onClick={()=> router.push('/')}>
-        <Image src={'/assets/logos/SClogo.png'} alt="SCLogo" title="SCLogo" width={'100%'}
+        <img src={'/assets/logos/SClogo.png'} alt="SCLogo" title="SCLogo" width={'100%'}
               height={'100%'} />
       </div>
 
       <nav className={`${styles['navigation']}`}>
         {mobileNavWidth <= 750 && (
           <div className={`${styles['container-hamburguer-icon']}`}>
-            <Image
+            <img
               className="img-fluid"
               alt="x"
               src={'/assets/icons/hamburguer-icon.png'}

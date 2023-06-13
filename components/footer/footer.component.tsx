@@ -26,12 +26,11 @@ const SCfooterComponent = () => {
                 >
                   <a
                     className={`${styles["btn-floating"]} btn-tw mx-1`}
-                    href="https://www.google.com"
+                    href="https://instagram.com/reposteriasc"
                   >
-                    <Image
+                    <img
                       src={"/assets/logos/instagram-logo.png"}
-                      width={'60%'}
-                      height={'60%'}
+                      className={`${styles["instagram"]}`}
                       alt="instagram"
                     />
                   </a>
