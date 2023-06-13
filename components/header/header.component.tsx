@@ -3,62 +3,53 @@ import { IHeaderNav } from "./interfaces/index";
 import SCheaderMenuComponent from "../header-menu/header-menu.component";
 import SCsidebarComponent from "../sidebar/sidebar.component";
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import styles from  "./header.module.scss";
 
 const SCheaderComponent = () => {
-  const widthWindow = typeof window !== 'undefined' ? 'red' : 'blue'
-  // const [mobileNavWidth, setMobileNavWidth] = useState(globalThis?.window?.innerWidth);
-  const [mobileNavWidth, setMobileNavWidth] = useState(500);
+  const router = useRouter();
+  const [mobileNavWidth, setMobileNavWidth] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
-
-  const handleClose = () => setIsOpen(false);
-  const toggleShow = () => setIsOpen((s) => !s);
 
   const navItems: IHeaderNav = {
     id: "1",
     items: [
-      {
-        id: "1",
-        title: "Contactanos",
-        url: "/contact",
-      },
-      {
-        id: "2",
-        title: "Productos",
-        url: "/products",
-        items: [
-          {
-            id: "22",
-            title: "Galletas",
-            url: "/cookies",
-          },
-          {
-            id: "23",
-            title: "Pasteles",
-            url: "/cakes",
-          },
-          {
-            id: "24",
-            title: "Brownies",
-            url: "/brownies",
-          },
-          {
-            id: "25",
-            title: "Roles",
-            url: "/roles",
-          },
-        ],
-      },
+      // {
+      //   id: "2",
+      //   title: "Productos",
+      //   url: "/products",
+      //   items: [
+      //     {
+      //       id: "22",
+      //       title: "Galletas",
+      //       url: "/cookies",
+      //     },
+      //     {
+      //       id: "23",
+      //       title: "Pasteles",
+      //       url: "/cakes",
+      //     },
+      //     {
+      //       id: "24",
+      //       title: "Brownies",
+      //       url: "/brownies",
+      //     },
+      //     {
+      //       id: "25",
+      //       title: "Roles",
+      //       url: "/roles",
+      //     },
+      //   ],
+      // },
       {
         id: "3",
-        title: "Acerca de",
+        title: "Nosotros",
         url: "/about",
       },
     ],
   };
 
   const toggleMobileNav = () => {
-    console.log("Enters");
     setIsOpen(!isOpen);
   };
 
@@ -72,21 +63,22 @@ const SCheaderComponent = () => {
 
   useEffect(() => {
     // Fetch NavItems from API
+    setMobileNavWidth(window.innerWidth);
     window.addEventListener("resize", updateSizeWindow);
     return () => window.removeEventListener("resize", updateSizeWindow);
-  });
+  }, []);
 
   return (
     <header className={styles.navbar}>
-      <div className={`${styles['sc-logo']}`}>
-        <Image src={'/assets/logos/SClogo.png'} alt="SCLogo" title="SCLogo" width={'100%'}
+      <div className={`${styles['sc-logo']}`} onClick={()=> router.push('/')}>
+        <img src={'/assets/logos/SClogo.png'} alt="SCLogo" title="SCLogo" width={'100%'}
               height={'100%'} />
       </div>
 
       <nav className={`${styles['navigation']}`}>
         {mobileNavWidth <= 750 && (
           <div className={`${styles['container-hamburguer-icon']}`}>
-            <Image
+            <img
               className="img-fluid"
               alt="x"
               src={'/assets/icons/hamburguer-icon.png'}

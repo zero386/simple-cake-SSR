@@ -12,13 +12,13 @@ const SCcarouselImagesComponent = ({
   ...props
 }: SCcarouselImagesProps) => {
   return (
-    <Carousel fade>
+    <Carousel fade className={`${styles['carousel-fade']}`}>
       {images.map((image, indexImage) => {
         return (
-          <Carousel.Item key={indexImage}>
+          <Carousel.Item key={indexImage} >
             {/* Bug with Nextjs Image inside carousel component from React Bootstrap*/}
             <img
-              className={`${styles["d-block"]} image-carousel`}
+              className={`${styles["image-carousel"]}`}
               src={image}
               alt="First slide"
               width={"100%"}

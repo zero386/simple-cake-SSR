@@ -5,7 +5,7 @@ import SCcardComponent from "../../components/card/card.component";
 import SCmodalComponent from "../../components/modal/modal.component";
 import SCcarouselImagesComponent from "../../components/carousel-images/carousel-images.component";
 import SCloadingSpinner from "../../components/loading-spinner/loading-spinner.component";
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 import styles from "./products.module.scss";
 
 interface IProduct {

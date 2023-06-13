@@ -34,12 +34,12 @@ const SCrowComponent = ({ columns, ...props }: SCrowProps) => {
       <div className={`${styles["row-info"]} row`}>
         {columns.map((column, indexColumn) => {
           return (
-            <div key={indexColumn} className={`${styles["column"]} about-info`}>
+            <div key={indexColumn} className={`${styles["column"]}`}>
               {column.image && (
-                <Image
+                <img
                   src={`${column.image}`}
                   alt="SC-Image"
-                  className="image-fluid"
+                  className={`${styles["image-fluid"]}`}
                   width={"100%"}
                   height={"100%"}
                 />

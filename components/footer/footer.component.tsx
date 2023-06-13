@@ -8,7 +8,12 @@ const SCfooterComponent = () => {
     <div className={`${styles["footer"]}`}>
       <footer>
         <div className={`${styles["container"]}`}>
-          <div>
+          <div className={`${styles["contact"]}`}>
+            <p className={`${styles["sc-text"]}`}>Contacto</p>
+            <label className={`${styles["sc-text"]}`}>Cel: 3324953033</label>
+            <label className={`${styles["sc-text"]}`}>Zapopan, Jalisco</label>
+          </div>
+          <div className={`${styles["follow-us"]}`}>
             <ul
               className={`${styles["social-network"]} list-inline text-center`}
             >
@@ -21,30 +26,12 @@ const SCfooterComponent = () => {
                 >
                   <a
                     className={`${styles["btn-floating"]} btn-tw mx-1`}
-                    href="https://www.google.com"
+                    href="https://instagram.com/reposteriasc"
                   >
-                    <Image
+                    <img
                       src={"/assets/logos/instagram-logo.png"}
-                      width={'60%'}
-                      height={'60%'}
+                      className={`${styles["instagram"]}`}
                       alt="instagram"
-                    />
-                  </a>
-                </OverlayTrigger>
-              </li>
-              <li className={`${styles["list-inline-item"]}`}>
-                <OverlayTrigger
-                  overlay={<Tooltip id="tooltip-disabled">Facebook</Tooltip>}
-                >
-                  <a
-                    className={`${styles["btn-floating"]} btn-tw mx-1`}
-                    href="https://www.google.com"
-                  >
-                    <Image
-                      src={"/assets/logos/fb-logo.png"}
-                      width={'60%'}
-                      height={'60%'}
-                      alt="facebook"
                     />
                   </a>
                 </OverlayTrigger>
@@ -52,14 +39,8 @@ const SCfooterComponent = () => {
             </ul>
           </div>
           <div className={`${styles["copyright"]}`}>
-            <div className={`${styles["copyright-text"]}`}>
-              <label className={`${styles["sc-text"]}`}>2022 Copyright</label>
-            </div>
-            <div className={`${styles["copyright-text"]}`}>
-              <label className={`${styles["sc-text"]}`}>
-                simplecake.com.mx Todos los derechos reservados
-              </label>
-            </div>
+            <label className={`${styles["sc-text"]}`}>2022 Copyright</label>
+            <label className={`${styles["sc-text"]}`}>www.simplecake.com.mx</label>
           </div>
         </div>
       </footer>

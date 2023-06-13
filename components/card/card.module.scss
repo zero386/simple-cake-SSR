@@ -1,33 +1,32 @@
 @import "../../styles/globals.scss";
 
 .card {
-    cursor: pointer;
-    &:hover{
-        background-color: $light-gray;
-        box-shadow: $box-shadow;
-        transition: $box-shadow-transition;
-    }
+  cursor: pointer;
+  &:hover {
+    background-color: $light-gray;
+    box-shadow: $box-shadow;
+    transition: $box-shadow-transition;
+  }
 
-    .card-title {
-        color: $black;
-        font-weight: $font-weigth-bolder;
-        font-family: $font-family;
-    }
+  .card-title {
+    color: $black;
+    font-weight: $font-weigth-bolder;
+    font-family: $font-family;
+  }
 
-    .card-body {
-        padding: 2%;
-    }
+  .card-body {
+    padding: 2%;
+  }
 
-    .price-item {
-        color: $red-cake;
-        font-weight: $font-weigth-bolder;
-        font-family: $font-family;
-    }
+  .price-item {
+    color: $red-cake;
+    font-weight: $font-weigth-bolder;
+    font-family: $font-family;
+  }
 
-    .content-item {
-        color: $black;
-        font-weight: $font-weigth-bolder;
-        font-family: $font-family;
-    }
-    
+  .content-item {
+    color: $black;
+    font-weight: $font-weigth-bolder;
+    font-family: $font-family;
+  }
 }

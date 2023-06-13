@@ -5,7 +5,7 @@ import styles from "./card.module.scss";
 type SCcardProps = {
   id?: string | number;
   image: string;
-  title: string;
+  title?: string;
   text?: string[];
 };
 
