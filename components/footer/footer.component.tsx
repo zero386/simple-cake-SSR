@@ -30,7 +30,7 @@ const SCfooterComponent = () => {
                     href="https://instagram.com/reposteriasc"
                   >
                     <img
-                      src={`${prefix}/assets/logos/instagram-logo.png`}
+                      src={`/assets/logos/instagram-logo.png`}
                       className={`${styles["instagram"]}`}
                       alt="instagram"
                     />
