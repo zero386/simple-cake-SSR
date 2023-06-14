@@ -19,7 +19,7 @@ const SCcollageImagesComponent = ({ images, ...props }: SCcollageImagesProps) =>
           <div key={indexImage} className={styles["container"]}>
             <img
               alt="lo"
-              src={`${prefix}${image.images[0]}`}
+              src={`${image.images[0]}`}
               width={"100%"}
               height={"100%"}
               className={styles["image"]}

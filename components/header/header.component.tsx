@@ -72,7 +72,7 @@ const SCheaderComponent = () => {
   return (
     <header className={styles.navbar}>
       <div className={`${styles['sc-logo']}`} onClick={()=> router.push('/')}>
-        <img src={`${prefix}/assets/logos/SClogo.png`} alt="SCLogo" title="SCLogo" width={'100%'}
+        <img src={`/assets/logos/SClogo.png`} alt="SCLogo" title="SCLogo" width={'100%'}
               height={'100%'} />
       </div>
 
@@ -82,7 +82,7 @@ const SCheaderComponent = () => {
             <img
               className="img-fluid"
               alt="x"
-              src={`${prefix}/assets/icons/hamburguer-icon.png`}
+              src={`/assets/icons/hamburguer-icon.png`}
               width={"50px"}
               height={'50px'}
               onClick={() => toggleMobileNav()}

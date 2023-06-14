@@ -24,7 +24,7 @@ const AboutUsPage = () => {
           ofreciendo nuestra propia marca de postres.`,
           },
           {
-            image: `${prefix}/assets/about/hornear-2.webp`,
+            image: `/assets/about/hornear-2.webp`,
             text: ``,
           },
         ],
@@ -33,7 +33,7 @@ const AboutUsPage = () => {
         name: "objective",
         columns: [
           {
-            image: `${prefix}/assets/logos/SClogo.png`,
+            image: `/assets/logos/SClogo.png`,
             text: ``,
           },
           {
@@ -55,7 +55,7 @@ const AboutUsPage = () => {
             ofrecemos nuestros postres de una manera simple, deliciosa y sobre todo económica`,
           },
           {
-            image: `${prefix}/assets/about/variety-products.jpg`,
+            image: `/assets/about/variety-products.jpg`,
             text: "",
           },
         ],
