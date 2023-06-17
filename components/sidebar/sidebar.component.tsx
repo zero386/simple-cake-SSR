@@ -66,8 +66,6 @@ const SCsidebarComponent = ({
     updateActiveItem(url);
   }, [isOpen]);
 
-  const t = "/assets/icons/x-icon.png";
-
   return (
     <Offcanvas show={show} onHide={handleClose}>
       <Offcanvas.Header className={`${styles["off-canvas-header"]}`}>
