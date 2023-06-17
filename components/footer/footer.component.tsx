@@ -11,7 +11,7 @@ const SCfooterComponent = () => {
         <div className={`${styles["container"]}`}>
           <div className={`${styles["contact"]}`}>
             <p className={`${styles["sc-text"]}`}>Contacto</p>
-            <label className={`${styles["sc-text"]}`}>Cel: 3324953033</label>
+            <label className={`${styles["sc-text"]}`}>Cel: 3327897983</label>
             <label className={`${styles["sc-text"]}`}>Zapopan, Jalisco</label>
           </div>
           <div className={`${styles["follow-us"]}`}>

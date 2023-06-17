@@ -200,6 +200,7 @@ const ProductsPage = () => {
             return (
               <div
                 key={indexProduct}
+                style={{ justifyContent: 'center'  }}
                 className={`${styles['product-card']}`}
                 onClick={() => openModal(product)}
               >

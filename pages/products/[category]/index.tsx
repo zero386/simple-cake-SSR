@@ -36,7 +36,7 @@ const ProductsPage = () => {
         "/assets/products/cookies/NY/chocolate-cacahuate/choco-cacahuate-1.jpg",
         "/assets/products/cookies/NY/chocolate-cacahuate/choco-cacahuate-2.jpg",
       ],
-      price: 500,
+      price: 220,
       quantity: 6,
     },
     {
@@ -46,44 +46,43 @@ const ProductsPage = () => {
         "/assets/products/cookies/NY/nuez-y-chispas-chocolate/nuez-y-chispas-1.jpg",
         "/assets/products/cookies/NY/nuez-y-chispas-chocolate/nuez-y-chispas-2.jpg",
       ],
-      price: 300,
+      price: 230,
       quantity: 6,
     },
     {
       id: "3",
-      name: "Galleta decorada royal icing",
-      images: [
-        "/assets/products/cookies/royal-icing/roy-ici-donut.jpg",
-      ],
-      price: 350,
-      quantity: 3,
+      name: "Galleta de zanahoria con nuez y queso filadelfia",
+      images: ["/assets/products/cookies/zanahoria-filadelfia/cookie-zanahoria-1.jpg"],
+      price: 170,
+      quantity: 6,
     },
     {
       id: "4",
-      name: "Galleta decorada evento especial",
-      images: [
-        "/assets/products/cookies/royal-icing/roy-ici-baptism.jpg",
-      ],
-      price: 350,
-      quantity: 3,
+      name: "Galleta decorada para evento especial",
+      images: ["/assets/products/cookies/royal-icing/roy-ici-baptism.jpg"],
+      price: 230,
+      quantity: 6,
     },
     {
       id: "5",
       name: "Galleta decorada royal icing",
-      images: [
-        "/assets/products/cookies/royal-icing/roy-ici-music-notes.jpg",
-      ],
-      price: 350,
-      quantity: 3,
+      images: ["/assets/products/cookies/royal-icing/roy-ici-music-notes.jpg"],
+      price: 230,
+      quantity: 6,
     },
     {
       id: "6",
       name: "Galleta de mantequilla con mermelada al gusto",
-      images: [
-        "/assets/products/cookies/butter/butter-cookie-1.jpg",
-      ],
-      price: 700,
-      quantity: 8,
+      images: ["/assets/products/cookies/butter/butter-cookie-1.jpg"],
+      price: 220,
+      quantity: 10,
+    },
+    {
+      id: "7",
+      name: "Galleta decorada royal icing",
+      images: ["/assets/products/cookies/royal-icing/roy-ici-donut.jpg"],
+      price: 230,
+      quantity: 6,
     },
   ];
 
@@ -92,109 +91,77 @@ const ProductsPage = () => {
       id: "1",
       name: "Pastel de cafe con chocolate y vainilla",
       images: ["/assets/products/cakes/cake-1.jpg"],
-      price: 300,
-      quantity: 2,
+      price: 500,
+      quantity: 1,
     },
     {
       id: "2",
       name: "Pastel de vainilla y frutos rojos",
       images: ["/assets/products/cakes/cake-2.jpg"],
-      price: 100,
+      price: 500,
       quantity: 1,
     },
     {
       id: "3",
       name: "Pastel de mocha con nueza y vainilla",
       images: ["/assets/products/cakes/cake-3.jpg"],
-      price: 150,
-      quantity: 3,
+      price: 450,
+      quantity: 1,
     },
     {
       id: "4",
-      name: "Pastel de chocolate ferrero y vainilla del himalaya",
+      name: "Pastel de chocolate ferrero y vainilla",
       images: ["/assets/products/cakes/cake-4.jpg"],
-      price: 250,
+      price: 450,
       quantity: 1,
-    }
+    },
   ];
 
   const productBrownies = [
     {
       id: "1",
-      name: "Brownie 1",
-      images: [
-        "/assets/products/cookies/cookie-1.jpg",
-        "/assets/products/cookies/cookie-1.jpg",
-      ],
-      price: 300,
-      quantity: 2,
+      name: "Brownie con chocolate y chispas",
+      images: ["/assets/products/brownies/brownie-1.jpg"],
+      price: 60,
+      quantity: 1,
     },
     {
       id: "2",
-      name: "Brownie 2",
-      images: [
-        "/assets/products/cookies/cookie-2.jpg",
-        "/assets/products/cookies/cookie-9.jpg",
-      ],
-      price: 100,
+      name: "Brownie con chocolate, caramelo salado y oreo",
+      images: ["/assets/products/brownies/brownie-2.jpg"],
+      price: 50,
       quantity: 1,
     },
+    // {
+    //   id: "3",
+    //   name: "Brownie con chocolate, caramelo salado y oreo",
+    //   images: ["/assets/products/brownies/brownie-3.jpg"],
+    //   price: 100,
+    //   quantity: 1,
+    // },
+  ];
+
+  const productRolls = [
     {
-      id: "3",
-      name: "Brownie 3",
-      images: [
-        "/assets/products/cookies/cookie-3.jpg",
-        "/assets/products/cookies/cookie-5.jpg",
-      ],
-      price: 150,
-      quantity: 3,
-    },
-    {
-      id: "4",
-      name: "Brownie 4",
-      images: [
-        "/assets/products/cookies/cookie-4.jpg",
-        "/assets/products/cookies/cookie-7.jpg",
-      ],
-      price: 250,
-      quantity: 1,
-    },
-    {
-      id: "5",
-      name: "Brownie 5",
-      images: [
-        "/assets/products/cookies/cookie-5.jpg",
-        "/assets/products/cookies/cookie-6.jpg",
-        "/assets/products/cookies/cookie-1.jpg",
-      ],
-      price: 400,
-      quantity: 1,
-    },
-    {
-      id: "6",
-      name: "Brownie 6",
-      images: [
-        "/assets/products/cookies/cookie-6.jpg",
-        "/assets/products/cookies/cookie-1.jpg",
-        "/assets/products/cookies/cookie-3.jpg",
-        "/assets/products/cookies/cookie-7.jpg",
-      ],
-      price: 170,
-      quantity: 1,
+      id: "1",
+      name: "Roles de canela con queso filadelfia",
+      images: ["/assets/products/rolls/rolls-1.jpg"],
+      price: 90,
+      quantity: 2,
     },
   ];
 
   const fetchData = () => {
-    console.log(router);
-    console.log(category);
     setProducts(productCookies);
-    // Fetch Products From API
+    // TODO Fetch Products From API
     if (category === "cookies") {
       setProducts(productCookies);
     } else if (category === "brownies") {
       setProducts(productBrownies);
-    } else {
+    } else if (category === "cakes") {
       setProducts(productCakes);
+    } else {
+      setProducts(productRolls);
     }
     setTimeout(() => {
       setIsLoading(false);
@@ -240,7 +207,9 @@ const ProductsPage = () => {
                     image={product.images[0]}
                     text={[
                       `Precio: $${product.price}`,
-                      `Contenido: ${product.quantity} piezas`,
+                      product.quantity > 1
+                        ? `Contenido: ${product.quantity} piezas`
+                        : `Contenido: ${product.quantity} pieza`,
                     ]}
                   />
                 </motion.div>
