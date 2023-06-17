@@ -15,7 +15,7 @@ const SCwpButtonComponent = () => {
       {showWPButton && (
         <FloatingWhatsApp
           popupMessage="Hola! Deseas realizar un pedido?"
-          phone="3324953033"
+          phone="3327897983"
           headerColor="#FF6666"
           headerTitle="Simple Cake Chat"
         />

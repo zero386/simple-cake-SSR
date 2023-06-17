@@ -70,7 +70,7 @@ const SCsidebarComponent = ({
     <Offcanvas show={show} onHide={handleClose}>
       <Offcanvas.Header className={`${styles["off-canvas-header"]}`}>
         <Offcanvas.Title></Offcanvas.Title>
-        <Image
+        <img
           src={"/assets/icons/x-icon.png"}
           alt="xIcon"
           title="xIcon"

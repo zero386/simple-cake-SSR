@@ -11,9 +11,10 @@ type SCcardProps = {
 
 const SCcardComponent = ({ image, title, text, ...props }: SCcardProps) => {
   return (
-    <Card style={{ width: "18rem" }} className={`${styles['card']}`}>
-      <Card.Img variant="top" src={image} width="200px" />
+    <Card style={{ width: "18rem", border: 0 }} className={`${styles['card']}`}>
+      <Card.Img style={{ borderRadius: "50%" }} variant="top" src={image} width="200px" />
       <Card.Body>
+      <hr style={{ height: "5px", backgroundColor: '#FF6666',  }}></hr>
         <Card.Title>
           <label className={`${styles['sc-text']}`}>{title}</label>
         </Card.Title>

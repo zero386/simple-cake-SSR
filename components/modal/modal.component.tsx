@@ -41,7 +41,7 @@ const SCmodalComponent = ({
         <Modal.Title id="example-custom-modal-styling-title">
           <label className={`${styles['sc-text']}`}>{headerTitle}</label>
         </Modal.Title>
-        <Image
+        <img
           src={"/assets/icons/x-icon.png"}
           alt="xIcon"
           title="Logo"

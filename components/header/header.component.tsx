@@ -15,33 +15,33 @@ const SCheaderComponent = () => {
   const navItems: IHeaderNav = {
     id: "1",
     items: [
-      // {
-      //   id: "2",
-      //   title: "Productos",
-      //   url: "/products",
-      //   items: [
-      //     {
-      //       id: "22",
-      //       title: "Galletas",
-      //       url: "/cookies",
-      //     },
-      //     {
-      //       id: "23",
-      //       title: "Pasteles",
-      //       url: "/cakes",
-      //     },
-      //     {
-      //       id: "24",
-      //       title: "Brownies",
-      //       url: "/brownies",
-      //     },
-      //     {
-      //       id: "25",
-      //       title: "Roles",
-      //       url: "/roles",
-      //     },
-      //   ],
-      // },
+      {
+        id: "2",
+        title: "Menú",
+        url: "/products",
+        items: [
+          {
+            id: "22",
+            title: "Galletas",
+            url: "/cookies",
+          },
+          {
+            id: "23",
+            title: "Pasteles",
+            url: "/cakes",
+          },
+          {
+            id: "24",
+            title: "Brownies",
+            url: "/brownies",
+          },
+          {
+            id: "25",
+            title: "Roles",
+            url: "/roles",
+          },
+        ],
+      },
       {
         id: "3",
         title: "Nosotros",
